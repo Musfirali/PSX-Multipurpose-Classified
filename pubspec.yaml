@@ -1,0 +1,185 @@
+name: psxmpc
+description: A new PSX Multipurpose Classified application.
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+
+version: 1.3.1+22
+publish_to: none
+
+environment:
+  sdk: '>=2.15.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  platform: ^3.1.0
+  shared_preferences: ^2.1.1 
+  http: ^0.13.6
+  provider: ^6.0.5
+  connectivity: 3.0.6
+
+  cached_network_image: ^3.2.3
+  theme_manager: 1.1.1
+  flutter_map: ^4.0.0
+  image_picker: ^0.8.6+4
+  latlong2: ^0.8.2
+
+  sembast: 3.2.0+1
+  path_provider: ^2.0.15
+  intl: 0.18.0
+  shimmer: ^3.0.0
+  url_launcher: ^6.1.11
+  carousel_slider: ^4.2.1
+  
+  firebase_core: ^2.13.1
+  firebase_core_platform_interface: ^4.8.0
+  firebase_messaging: ^14.6.2
+  firebase_database: ^10.2.2 
+  firebase_auth: ^4.6.2
+
+  google_mobile_ads : ^3.0.0
+  google_sign_in: ^6.1.3
+  flutter_facebook_auth: 4.0.0
+  photo_view: 0.14.0  
+  progress_dialog_null_safe: 1.0.7
+  flutter_braintree: ^3.0.0
+  launch_review: 3.0.1
+  package_info_plus: ^4.0.2
+
+  flutter_credit_card: ^3.0.6
+  fluttertoast: ^8.2.2
+  permission_handler: ^10.2.0 
+  permission_handler_platform_interface: ^3.9.0
+  geocode: ^1.0.3
+  geolocator: ^9.0.2 
+  flutter_html: ^3.0.0-beta.2
+  share_plus: ^7.0.2
+  the_apple_sign_in: 1.1.1
+  razorpay_flutter: ^1.3.5
+  flutter_native_image: 0.0.6+1
+  flutter_paystack: 1.0.7
+  firebase_dynamic_links: ^5.3.2
+  in_app_purchase: ^3.1.7
+  flutter_linkify: ^6.0.0
+  google_maps_flutter: ^2.2.8
+  flutter_datetime_picker_plus: 2.0.1
+  video_thumbnail: 0.5.3
+  video_player: ^2.6.1 
+  file_picker: ^5.3.1
+  geocoding: ^2.1.0
+  camera: ^0.10.5+2
+  app_tracking_transparency: ^2.0.4 
+  firebase_crashlytics: ^3.3.2
+  map_launcher: ^2.1.1
+  device_info_plus: ^9.0.2
+  platform_device_id: 1.0.1
+  encrypt: 5.0.1
+  dotted_border: <2.0.0+3
+  flutter_stripe: ^9.2.0
+  flutter_svg: ^2.0.6
+  firebase_app_check: ^0.1.3
+  calendar_date_picker2: ^0.5.2
+  remixicon: 1.0.0
+  quiver: ^3.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+dependency_overrides:
+  intl: ^0.17.0-nullsafety.2
+ 
+ 
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+  
+  # To add assets to your application, add an assets section, like this:
+  assets:
+   - assets/lang/
+   - assets/images/placeholder_circle_image.png
+   - assets/images/placeholder_image.png
+   - assets/images/flutter_buy_and_sell_logo.png
+   - assets/images/default_image.png
+   - assets/images/user_default_photo.png
+   - assets/images/location_onboard.svg
+   - assets/images/slider_1.svg
+   - assets/images/slider_2.svg
+   - assets/images/slider_3.svg
+   - assets/images/no_notification.svg
+   - assets/images/buy_package.svg
+   - assets/images/onboard_language.svg
+   - assets/images/chat_list_empty_photo.svg
+   - assets/images/demo_alert.png 
+   - assets/images/google_logo.png 
+   - assets/images/buy_package_background.png
+   - assets/images/item_list_empty.svg
+   - assets/images/facebook.svg
+   - assets/images/google.svg
+   - assets/images/instagram.svg
+   - assets/images/pinterest.svg
+   - assets/images/twitter.svg
+   - assets/images/youtube.svg
+   - assets/images/home_bottom.svg
+   - assets/images/home_bottom_selected.svg
+   - assets/images/payment/offline.png
+   - assets/images/payment/paypal.png
+   - assets/images/payment/paystack.png
+   - assets/images/payment/razor.png
+   - assets/images/payment/stripe.png
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: ps_standard_font
+      fonts:
+        - asset: assets/fonts/Product-Sans-Regular.ttf
+        - asset: assets/fonts/Product-Sans-Bold-Italic.ttf
+        - asset: assets/fonts/Product-Sans-Bold.ttf
+        - asset: assets/fonts/Product-Sans-Italic.ttf
+
+
+
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
+
+
